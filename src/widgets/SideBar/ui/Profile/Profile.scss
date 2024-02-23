@@ -1,0 +1,39 @@
+.UserBlock {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  align-items: center;
+}
+
+.UserInfo {
+  display: flex;
+  gap: 5px;
+  span {
+    display: inline-block;
+    font-size: 10px;
+  }
+}
+
+.UserName {
+  color: var(--primary-color);
+  white-space: nowrap;
+}
+
+.UserBlockCollapsed {
+  justify-content: center;
+  &:hover {
+    background-color: var(--bg-color);
+  }
+}
+
+.UserButton {
+  display: flex;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 26px;
+
+  border-radius: 6px;
+  background-color: var(--bg-color);
+}

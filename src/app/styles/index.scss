@@ -1,0 +1,15 @@
+@import url("./reset.scss");
+@import url("./variables/global.scss");
+@import url("./themes/light.scss");
+@import url("./themes/dark.scss");
+
+.app {
+  font: var(--font);
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: #808080;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

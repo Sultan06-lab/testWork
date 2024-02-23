@@ -1,0 +1,72 @@
+.SideBar {
+  position: relative;
+  background-color: var(--bg-invert-color);
+  width: var(--sidebar-size);
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: 0.3s all;
+  border-radius: 8px;
+  box-shadow: 0 0 0 2px var(--bg-color), 0 0 0 4px #fff;
+}
+
+.theme {
+  box-shadow: 0 0 0 2px var(--bg-color), 0 0 0 4px gray;
+}
+.ThemeButton {
+  padding: 10px 0px 5px;
+}
+
+.toggleButton {
+  z-index: 10;
+  position: absolute;
+  margin-top: 10px;
+  top: 36px;
+  right: -12px;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+}
+
+.ArrowCollapsed {
+  filter: invert(1);
+}
+
+.toggleButtonCollapsed {
+  right: -38px;
+  background-color: var(--bg-invert-color);
+}
+
+.collapsed {
+  width: var(--sidebar-size-collapsed);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  &_collapsed {
+    padding: 0;
+    justify-content: center;
+  }
+}
+
+.topNavBar {
+  margin-top: 20px;
+  padding: 0px 15px;
+}
+
+.bottomNavBar {
+  margin-top: auto;
+  border-bottom: 1px solid var(--bg-color);
+  padding: 0px 15px;
+}
+
+.link {
+  margin-bottom: 10px;
+}

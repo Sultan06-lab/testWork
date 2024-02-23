@@ -1,0 +1,46 @@
+.DropDown {
+  position: absolute;
+  height: 200px;
+  bottom: 0;
+  background-color: var(--bg-invert-color);
+  border-radius: 10px;
+  opacity: 0;
+  transition: 0.3 all;
+  visibility: hidden;
+  right: -182px;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.14);
+}
+
+.opened {
+  visibility: visible;
+  opacity: 1;
+}
+
+.UserInfo-DropDown {
+  padding: 10px 10px 5px;
+  border-bottom: 1px solid;
+  border-color: var(--bg-color);
+}
+
+.UserNavBar-DropDown {
+  padding: 5px 10px;
+  line-height: 2;
+  border-bottom: 1px solid;
+  border-color: var(--bg-color);
+  & > p {
+    font-size: 13px;
+    font-weight: 600;
+  }
+}
+
+.DropDownBottom {
+  padding: 4px 10px 2px;
+  display: flex;
+  justify-content: space-between;
+  span {
+    display: inline-block;
+    margin-top: 18px;
+    font-size: 10px;
+  }
+}
